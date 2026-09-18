@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiyuan Zhang's research program on host metallicity and system multiplicity of cold planets in the Roman era.">
+  <meta property="og:title" content="Research · Jiyuan Zhang">
+  <meta property="og:description" content="New measurement and computational capabilities for cold-planet demographics in the Roman era.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zhangjiyuan22.github.io/research.html">
+  <meta property="og:image" content="https://zhangjiyuan22.github.io/assets/profile.png">
+  <title>Research · Jiyuan Zhang</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Jiyuan Zhang <span>张纪元</span></a>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="talks.html">Talks</a>
+        <a href="cv.html">CV</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Use dark theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero research-hero container">
+      <p class="eyebrow">Research program</p>
+      <h1>Cold planets in the Roman era</h1>
+      <p class="research-deck">Host composition and system architecture are two fundamental records of planet formation. My research develops the missing measurement and computational methods needed to study both dimensions for cold, low-mass planets beyond the snow line.</p>
+    </section>
+
+    <section class="container" aria-label="Research program overview">
+      <div class="research-map">
+        <article class="map-node map-source">
+          <span class="map-label">The opportunity</span>
+          <h2>Roman microlensing census</h2>
+          <p>A large sample of cold planets extending from the Galactic disk into the bulge.</p>
+        </article>
+        <div class="map-connector" aria-hidden="true"><span></span><span></span></div>
+        <div class="map-branches">
+          <article class="map-node">
+            <span class="map-label">Host composition</span>
+            <h2>Metallicity</h2>
+            <p>How does planet formation depend on the available solid material and Galactic environment?</p>
+          </article>
+          <article class="map-node">
+            <span class="map-label">System architecture</span>
+            <h2>Multiplicity</h2>
+            <p>How are cold planets organized in multi-planet systems and stellar binaries?</p>
+          </article>
+        </div>
+      </div>
+      <p class="research-map-caption">Roman supplies the sample. The scientific return depends on whether host properties and complex lens configurations can be measured systematically across that sample.</p>
+    </section>
+
+    <section class="research-chapter section" id="metallicity">
+      <div class="container chapter-grid">
+        <aside class="chapter-side">
+          <p class="eyebrow">Research axis 01</p>
+          <h2>Host metallicity</h2>
+          <p class="chapter-question">How does the formation of cold, low-mass planets depend on host composition?</p>
+          <div class="chapter-stat"><strong>≈150</strong><span>Roman planetary systems with potential host-metallicity measurements</span></div>
+          <div class="chapter-stat"><strong>≈0.25 dex</strong><span>Typical forecast precision from mock-recovery analysis</span></div>
+        </aside>
+        <div class="chapter-body">
+          <h3>The missing quadrant in planet demographics</h3>
+          <p>Planet occurrence is known to depend on host-star metallicity, planet mass, and orbital period. Yet the relation remains unmeasured for low-mass planets beyond the snow line—the regime where microlensing is uniquely sensitive. Measuring this relation would test how the solid reservoir in protoplanetary disks controls the formation of cold planets, and could reveal the low-metallicity threshold below which even low-mass planet formation is suppressed.</p>
+          <p>Roman will discover planets across the Galactic disk and bulge, extending this demographic measurement beyond the solar neighborhood. The obstacle is that its lens stars will often be faint, distant M dwarfs blended with the source, making conventional metallicity measurements unavailable.</p>
+
+          <div class="capability-block">
+            <p class="kicker">New measurement capability</p>
+            <h3>Photometric–microlensing metallicity</h3>
+            <p>I developed a method that makes metallicity identifiable by combining three complementary pieces of information:</p>
+            <ol class="method-steps">
+              <li><strong>Multi-band lens photometry</strong><span>captures the metallicity-sensitive optical–near-infrared colors of cool M-dwarf atmospheres.</span></li>
+              <li><strong>Microlensing geometry</strong><span>provides the mass–distance constraint needed to infer the lens absolute magnitude.</span></li>
+              <li><strong>Stellar physics and reddening geometry</strong><span>separate intrinsic color from extinction and jointly constrain mass, distance, extinction, and metallicity.</span></li>
+            </ol>
+          </div>
+
+          <p>The method can be applied homogeneously to planetary and non-planetary microlensing events, providing both the detected hosts and the parent lens sample required for an occurrence calculation. With Roman's planned survey and additional late-time F062 imaging, it could enable the first occurrence–metallicity measurement for cold low-mass planets, constrain their low-metallicity cutoff, and extend these studies into the inner Galaxy.</p>
+          <div class="inline-links"><a href="https://arxiv.org/abs/2609.05265">Read the paper on arXiv ↗</a><a href="https://github.com/zhangjiyuan22/MetalLens">Explore MetalLens on GitHub ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-chapter section" id="multiplicity">
+      <div class="container chapter-grid">
+        <aside class="chapter-side">
+          <p class="eyebrow">Research axis 02</p>
+          <h2>System multiplicity</h2>
+          <p class="chapter-question">How common are cold multi-planet systems and planets in stellar binaries?</p>
+          <div class="chapter-stat"><strong>≈10⁸</strong><span>Lens configurations in a full triple-lens grid at comparable sampling density</span></div>
+          <div class="chapter-stat"><strong>&gt;1,000×</strong><span>Evaluation speedup from reusable adaptive maps</span></div>
+        </aside>
+        <div class="chapter-body">
+          <h3>The missing architectures of cold planetary systems</h3>
+          <p>Kepler and radial-velocity surveys have revealed that planetary systems are often multiple and highly structured, but their strongest demographic constraints concern relatively warm or massive planets. The occurrence and architecture of systems containing low-mass planets beyond the snow line remain largely unknown.</p>
+          <p>Triple-lens microlensing can probe both two planets orbiting a single host and planets residing in stellar binaries. Roman is expected to expand this sample to of order one hundred events. Turning those detections into reliable population measurements, however, requires systematic inference across the full, highly multimodal triple-lens parameter space.</p>
+
+          <div class="capability-block">
+            <p class="kicker">New computational capability</p>
+            <h3>AdaMGrid</h3>
+            <p>A conventional search recalculates the same underlying magnification pattern along every trial source trajectory. AdaMGrid changes the computational model:</p>
+            <ol class="method-steps">
+              <li><strong>Precompute once</strong><span>construct a magnification representation for each lens configuration.</span></li>
+              <li><strong>Refine adaptively</strong><span>concentrate numerical calculations near caustics and other high-gradient regions while controlling interpolation error.</span></li>
+              <li><strong>Reuse at scale</strong><span>evaluate many trajectories by interpolation and reuse maps across optimizer steps and different events.</span></li>
+            </ol>
+          </div>
+
+          <p>This reformulation makes a previously prohibitive full-parameter search computationally feasible. Applied systematically to Roman's triple-lens sample, it would support robust recovery of degenerate solutions and population-level studies of planetary multiplicity and planets in stellar binaries in the cold, low-mass regime.</p>
+          <div class="inline-links"><a href="https://github.com/zhangjiyuan22/AdaMGrid">Explore AdaMGrid on GitHub ↗</a><a href="projects.html#adamgrid">View the computational details →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section synthesis-section">
+      <div class="container synthesis-card">
+        <p class="eyebrow">The common thread</p>
+        <h2>From a survey catalog to a test of planet formation</h2>
+        <p>Metallicity and multiplicity probe complementary parts of the formation process: the material available to build planets and the architectures that emerge from that process. Together, the two methods are designed to turn Roman's cold-planet census into new measurements of how planet formation depends on host composition and system architecture across the Galaxy.</p>
+        <p class="synthesis-method">The same research approach extends beyond astronomy: identify the physical or computational information that is missing, redesign the representation or inference process, and build the capability that makes a previously inaccessible measurement possible.</p>
+        <div class="hero-actions"><a class="button primary" href="projects.html">See the algorithms</a><a class="button secondary" href="publications.html">View publications</a><a class="button secondary" href="talks.html">View talks</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Jiyuan Zhang · 张纪元</span>
+      <div class="footer-links"><a href="mailto:zhangjy22@mails.tsinghua.edu.cn">Email</a><a href="https://github.com/zhangjiyuan22">GitHub</a><a href="assets/Jiyuan_Zhang_CV.pdf">CV</a></div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

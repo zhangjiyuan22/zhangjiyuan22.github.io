@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jiyuan Zhang develops numerical algorithms, adaptive computation, and large-scale inference methods for complex physical systems.">
-  <meta property="og:title" content="Jiyuan Zhang · Numerical Algorithms and Physical Inference">
-  <meta property="og:description" content="Algorithms that make computationally prohibitive physical inference tractable.">
+  <meta name="description" content="Jiyuan Zhang develops new measurement and computational capabilities for Roman-era cold-planet demographics and complex physical inference.">
+  <meta property="og:title" content="Jiyuan Zhang · Cold-Planet Demographics and Computational Methods">
+  <meta property="og:description" content="New measurement and computational capabilities for physical inference.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zhangjiyuan22.github.io/">
   <meta property="og:image" content="https://zhangjiyuan22.github.io/assets/profile.png">
@@ -34,6 +34,7 @@
       <a class="brand" href="index.html">Jiyuan Zhang <span>张纪元</span></a>
       <div class="nav-links">
         <a class="active" href="index.html">About</a>
+        <a href="research.html">Research</a>
         <a href="projects.html">Projects</a>
         <a href="publications.html">Publications</a>
         <a href="talks.html">Talks</a>
@@ -46,14 +47,15 @@
   <main>
     <section class="hero container">
       <div>
-        <p class="eyebrow">Numerical algorithms · Physical inference</p>
+        <p class="eyebrow">Exoplanet demographics · Numerical algorithms · Physical inference</p>
         <h1>Jiyuan Zhang <span class="cn-name">张纪元</span></h1>
-        <h2>Algorithms that make computationally prohibitive physical inference tractable.</h2>
-        <p class="hero-copy">I am a PhD candidate in Astronomy at Tsinghua University, advised by Prof. Shude Mao, and hold a B.Eng. in Electrical Engineering and Automation, also from Tsinghua University. I develop efficient algorithms and inference methods for complex physical systems, from low-level data structures to adaptive computation and cluster-scale searches.</p>
+        <h2>Building new capabilities for physical inference.</h2>
+        <p class="hero-copy">I am a PhD candidate in Astronomy at Tsinghua University, advised by Prof. Shude Mao, and hold a B.Eng. in Electrical Engineering and Automation, also from Tsinghua University.</p>
+        <p class="hero-copy">My research develops the measurement and computational capabilities needed to turn Roman's microlensing census into demographic studies of cold planetary systems—how planet occurrence depends on host composition, and how cold planets are organized in multi-planet and stellar-binary systems. More broadly, I design efficient algorithms for complex physical inference, from low-level data structures to adaptive computation and cluster-scale searches.</p>
         <div class="hero-actions">
-          <a class="button primary" href="projects.html">Explore projects</a>
+          <a class="button primary" href="research.html">Explore research</a>
+          <a class="button secondary" href="projects.html">View projects</a>
           <a class="button secondary" href="assets/Jiyuan_Zhang_CV.pdf">Download CV</a>
-          <a class="button secondary" href="mailto:zhangjy22@mails.tsinghua.edu.cn">Email</a>
         </div>
       </div>
       <div class="portrait-wrap">
@@ -61,7 +63,39 @@
       </div>
     </section>
 
-    <section class="container" aria-label="Selected numerical results">
+    <section class="section research-program-section">
+      <div class="container">
+        <div class="section-head research-heading">
+          <div>
+            <p class="eyebrow">Research program</p>
+            <h2>Cold-planet demographics in the Roman era</h2>
+          </div>
+          <a href="research.html">Read the scientific story →</a>
+        </div>
+        <p class="section-lede">Host metallicity and system multiplicity carry complementary information about planet formation, yet both remain poorly constrained for low-mass planets beyond the snow line. Microlensing reaches this population, and Roman will provide the statistical sample. My research develops two currently missing capabilities needed to turn that sample into demographic measurements.</p>
+        <div class="research-pillars">
+          <article class="pillar-card">
+            <span class="pillar-number">01</span>
+            <p class="kicker">Host composition</p>
+            <h3>Measure metallicities of distant planetary hosts</h3>
+            <p>Combine multi-band lens photometry with microlensing constraints to recover the metallicities of M-dwarf lenses out to bulge distances.</p>
+            <p class="pillar-outcome">Toward the occurrence–metallicity relation and low-metallicity cutoff for cold, low-mass planets.</p>
+            <a href="research.html#metallicity">Photometric–microlensing metallicity →</a>
+          </article>
+          <article class="pillar-card">
+            <span class="pillar-number">02</span>
+            <p class="kicker">System architecture</p>
+            <h3>Search the full triple-lens solution space</h3>
+            <p>Replace repeated direct calculations with reusable adaptive magnification maps, making systematic global inference computationally feasible.</p>
+            <p class="pillar-outcome">Toward population studies of cold multi-planet systems and planets in stellar binaries.</p>
+            <a href="research.html#multiplicity">AdaMGrid and triple-lens inference →</a>
+          </article>
+        </div>
+        <p class="program-synthesis">Together, these methods aim to turn Roman's cold-planet census from a discovery catalog into a population-level experiment on how planet formation depends on host composition and system architecture across the Galaxy.</p>
+      </div>
+    </section>
+
+    <section class="container metrics-section" aria-label="Selected numerical results">
       <div class="metric-grid">
         <div class="metric"><strong>O(N²) → O(N log N)</strong><span>Core contour-integration operation</span></div>
         <div class="metric"><strong>&gt;1,000×</strong><span>Adaptive-map evaluation speedup</span></div>
@@ -82,14 +116,14 @@
           <article class="card">
             <span class="kicker">Adaptive computation</span>
             <h3>AdaMGrid</h3>
-            <p>Replaces repeated numerical calculations with reusable pre-computed adaptive maps and interpolation, refining resolution only where local errors require it.</p>
-            <p class="result">Enables the previously prohibitive triple-lens full parameter-space search.</p>
+            <p>Replaces repeated direct calculations with reusable adaptive maps and interpolation, refining resolution only where local errors require it.</p>
+            <p class="result">Enables a previously prohibitive triple-lens parameter-space search.</p>
             <div class="card-links"><a href="https://github.com/zhangjiyuan22/AdaMGrid">GitHub ↗</a><a href="projects.html#adamgrid">Details →</a></div>
           </article>
           <article class="card">
             <span class="kicker">Algorithms · C++</span>
             <h3>FastVBLensing</h3>
-            <p>Develops the augmented priority queue and uses the skip list to remove a quadratic bottleneck in contour-integration software.</p>
+            <p>Uses an augmented priority queue and a skip list to remove a quadratic bottleneck in contour-integration software.</p>
             <p class="result">More than 3× end-to-end acceleration without loss of accuracy.</p>
             <div class="card-links"><a href="https://github.com/zhangjiyuan22/FastVBLensing">GitHub ↗</a><a href="projects.html#fastvblensing">Details →</a></div>
           </article>
@@ -97,7 +131,7 @@
             <span class="kicker">Physics-informed inference</span>
             <h3>MetalLens</h3>
             <p>Combines multi-band photometry, microlensing geometry, and stellar models to break otherwise limiting parameter degeneracies.</p>
-            <p class="result">Opens a route to metallicity measurements for M dwarfs out to the Galactic Bulge.</p>
+            <p class="result">Opens a route to metallicity measurements for distant M dwarfs.</p>
             <div class="card-links"><a href="https://github.com/zhangjiyuan22/MetalLens">GitHub ↗</a><a href="https://arxiv.org/abs/2609.05265">arXiv ↗</a></div>
           </article>
         </div>
@@ -110,6 +144,7 @@
           <p class="eyebrow">Background</p>
           <h2>Research and engineering across scales</h2>
           <p class="section-intro">Across my projects, I look for the structure that changes whether a problem is feasible: a computational bottleneck that can be reformulated, a numerical representation that can be reused, or complementary physical information that makes a latent parameter identifiable.</p>
+          <p class="section-intro">This approach connects my scientific program to broader problems in simulation, planning, and inference for intelligent physical systems.</p>
         </div>
         <div class="timeline">
           <div class="timeline-item">
@@ -122,7 +157,7 @@
           </div>
           <div class="timeline-item">
             <h3>Methods</h3>
-            <p>Python · C/C++ · Linux · Data structures · Complexity Analysis · Performance Profiling and Optimization · Adaptive Refinement · HPC · Large-Scale Parallel Computing · Bayesian Inference</p>
+            <p>Python · C/C++ · Linux · Data structures · Adaptive grids · Numerical interpolation · HPC · Bayesian inference</p>
           </div>
         </div>
       </div>
@@ -134,6 +169,7 @@
           <div><p class="eyebrow">Find more</p><h2>Research links</h2></div>
         </div>
         <div class="link-list">
+          <a class="link-row" href="research.html"><strong>Research program</strong><span>Host composition and system architecture →</span></a>
           <a class="link-row" href="publications.html"><strong>Selected publications</strong><span>Six peer-reviewed and submitted works →</span></a>
           <a class="link-row" href="https://ui.adsabs.harvard.edu/public-libraries/MH4K5mXeRz2JETnLL0yPbg"><strong>Full publication list</strong><span>NASA ADS ↗</span></a>
           <a class="link-row" href="talks.html"><strong>Talks and seminars</strong><span>International conferences and invited seminars →</span></a>

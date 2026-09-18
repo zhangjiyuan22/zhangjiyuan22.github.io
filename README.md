@@ -16,10 +16,11 @@ The site is dependency-free: it uses plain HTML, CSS, and JavaScript, with no ex
 ## Structure
 
 - `index.html` — home and about
+- `research.html` — unified research program on host metallicity and system multiplicity
 - `projects.html` — selected technical projects
 - `publications.html` — publication list
 - `talks.html` — conference and invited talks
-- `cv.html` — embedded résumé and download link
+- `cv.html` — web CV and résumé download link
 - `assets/` — styles, script, portrait, favicon, and résumé PDF
 
 ## Updating
