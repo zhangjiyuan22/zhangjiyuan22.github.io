@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected numerical algorithms and physical inference projects by Jiyuan Zhang.">
+  <title>Projects · Jiyuan Zhang</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav container" aria-label="Primary navigation"><a class="brand" href="index.html">Jiyuan Zhang <span>张纪元</span></a><div class="nav-links"><a href="index.html">About</a><a class="active" href="projects.html">Projects</a><a href="publications.html">Publications</a><a href="talks.html">Talks</a><a href="cv.html">CV</a></div><button class="theme-toggle" type="button" aria-label="Use dark theme">☾</button></nav></header>
+  <main>
+    <section class="page-hero container"><p class="eyebrow">Selected work</p><h1>Projects</h1><p>Algorithms and computational systems for expensive numerical models, large-scale parameter searches, and physics-informed inference.</p></section>
+    <div class="container">
+      <article class="project-detail" id="adamgrid">
+        <div><p class="project-meta">Adaptive computation · HPC</p><h2>AdaMGrid</h2><div class="card-links"><a href="https://github.com/zhangjiyuan22/AdaMGrid">GitHub ↗</a></div></div>
+        <div class="project-body"><p>Conventional grid searches repeatedly evaluate the same expensive magnification pattern along many trial trajectories. AdaMGrid reformulates the workflow: it precomputes an adaptive magnification map once, then reuses it through interpolation throughout the search.</p><ul><li>Recursively refines the source plane according to local interpolation error, concentrating resolution near high-gradient regions.</li><li>Reduces repeated numerical evaluations while explicitly controlling interpolation accuracy.</li><li>Achieves more than three orders of magnitude speedup over direct calculation.</li><li>Deployed in a cluster-scale search totaling approximately five million CPU-hours, enabling a systematic exploration of the triple-lens parameter space.</li></ul></div>
+      </article>
+      <article class="project-detail" id="fastvblensing">
+        <div><p class="project-meta">Algorithms · Data structures · C++</p><h2>FastVBLensing</h2><div class="card-links"><a href="https://github.com/zhangjiyuan22/FastVBLensing">GitHub ↗</a><a href="https://www.youtube.com/watch?v=LREitrjWqio">Talk ↗</a></div></div>
+        <div class="project-body"><p>FastVBLensing targets a quadratic-complexity bottleneck inside contour-integration software used for gravitational microlensing calculations.</p><ul><li>Designed an augmented priority queue and applied a skip list to reduce the core operation from O(N²) to O(N log N).</li><li>Implemented the optimization in the underlying C++ codebase.</li><li>Validated performance and numerical accuracy across the complete operating range.</li><li>Obtained more than 3× overall acceleration while preserving the original precision.</li></ul></div>
+      </article>
+      <article class="project-detail" id="metallens">
+        <div><p class="project-meta">Inverse problems · Identifiability</p><h2>MetalLens</h2><div class="card-links"><a href="https://github.com/zhangjiyuan22/MetalLens">GitHub ↗</a><a href="https://arxiv.org/abs/2609.05265">arXiv ↗</a></div></div>
+        <div class="project-body"><p>The metallicities of distant M-dwarf microlensing lenses are difficult to measure directly. MetalLens introduces a joint inference method combining multi-band photometry, microlensing geometric constraints, and stellar physical models.</p><ul><li>Uses complementary physical responses to break degeneracies among stellar mass, distance, extinction, and metallicity.</li><li>Propagates observational and model uncertainties through an end-to-end inference framework.</li><li>Opens a route to systematic metallicity measurements for M dwarfs out to the Galactic bulge.</li><li>Designed for the lens sample expected from the Nancy Grace Roman Space Telescope.</li></ul></div>
+      </article>
+      <article class="project-detail" id="igbt">
+        <div><p class="project-meta">Power electronics · Experiment</p><h2>IGBT Junction-Temperature Computation</h2></div>
+        <div class="project-body"><p>Undergraduate thesis project establishing an end-to-end computation framework from measured current and voltage waveforms to the dynamic junction temperature of an IGBT power device.</p><ul><li>Experimentally characterized conduction and switching losses across device operating conditions.</li><li>Coupled the calibrated loss model to a thermal-impedance network for dynamic temperature computation.</li><li>Applied the framework to a representative inverter operating condition.</li><li>Obtained close agreement with Infineon's official IPOSIM power-device simulation tool.</li></ul></div>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Jiyuan Zhang · 张纪元</span><div class="footer-links"><a href="mailto:zhangjy22@mails.tsinghua.edu.cn">Email</a><a href="https://github.com/zhangjiyuan22">GitHub</a><a href="assets/Jiyuan_Zhang_CV.pdf">CV</a></div></div></footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>

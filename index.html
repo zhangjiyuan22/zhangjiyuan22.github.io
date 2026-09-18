@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiyuan Zhang develops numerical algorithms, adaptive computation, and large-scale inference methods for complex physical systems.">
+  <meta property="og:title" content="Jiyuan Zhang · Numerical Algorithms and Physical Inference">
+  <meta property="og:description" content="Algorithms that make computationally prohibitive physical inference tractable.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zhangjiyuan22.github.io/">
+  <meta property="og:image" content="https://zhangjiyuan22.github.io/assets/profile.png">
+  <title>Jiyuan Zhang · 张纪元</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jiyuan Zhang",
+    "alternateName": "张纪元",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Tsinghua University"},
+    "email": "mailto:zhangjy22@mails.tsinghua.edu.cn",
+    "url": "https://zhangjiyuan22.github.io/",
+    "sameAs": [
+      "https://github.com/zhangjiyuan22",
+      "https://ui.adsabs.harvard.edu/public-libraries/MH4K5mXeRz2JETnLL0yPbg"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Jiyuan Zhang <span>张纪元</span></a>
+      <div class="nav-links">
+        <a class="active" href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="talks.html">Talks</a>
+        <a href="cv.html">CV</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Use dark theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">Numerical algorithms · Physical inference</p>
+        <h1>Jiyuan Zhang <span class="cn-name">张纪元</span></h1>
+        <h2>Algorithms that make computationally prohibitive physical inference tractable.</h2>
+        <p class="hero-copy">I am a PhD candidate in Astronomy at Tsinghua University, advised by Prof. Shude Mao, with a B.Eng. in Electrical Engineering and Automation. I develop efficient algorithms and inference methods for complex physical systems, from low-level data structures to adaptive computation and cluster-scale searches.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="projects.html">Explore projects</a>
+          <a class="button secondary" href="assets/Jiyuan_Zhang_CV.pdf">Download CV</a>
+          <a class="button secondary" href="mailto:zhangjy22@mails.tsinghua.edu.cn">Email</a>
+        </div>
+      </div>
+      <div class="portrait-wrap">
+        <img class="portrait" src="assets/profile.png" alt="Portrait of Jiyuan Zhang" width="290" height="290">
+      </div>
+    </section>
+
+    <section class="container" aria-label="Selected numerical results">
+      <div class="metric-grid">
+        <div class="metric"><strong>O(N²) → O(N log N)</strong><span>Core contour-integration operation</span></div>
+        <div class="metric"><strong>&gt;1,000×</strong><span>Adaptive-map evaluation speedup</span></div>
+        <div class="metric"><strong>≈5 million CPU-hours</strong><span>Triple-lens global-search program</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>From bottleneck to capability</h2>
+          </div>
+          <a href="projects.html">View all projects →</a>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <span class="kicker">Adaptive computation</span>
+            <h3>AdaMGrid</h3>
+            <p>Replaces repeated direct calculations with reusable adaptive maps and interpolation, refining resolution only where local errors require it.</p>
+            <p class="result">Enables a previously prohibitive triple-lens parameter-space search.</p>
+            <div class="card-links"><a href="https://github.com/zhangjiyuan22/AdaMGrid">GitHub ↗</a><a href="projects.html#adamgrid">Details →</a></div>
+          </article>
+          <article class="card">
+            <span class="kicker">Algorithms · C++</span>
+            <h3>FastVBLensing</h3>
+            <p>Uses an augmented priority queue and a skip list to remove a quadratic bottleneck in contour-integration software.</p>
+            <p class="result">More than 3× end-to-end acceleration without loss of accuracy.</p>
+            <div class="card-links"><a href="https://github.com/zhangjiyuan22/FastVBLensing">GitHub ↗</a><a href="projects.html#fastvblensing">Details →</a></div>
+          </article>
+          <article class="card">
+            <span class="kicker">Physics-informed inference</span>
+            <h3>MetalLens</h3>
+            <p>Combines multi-band photometry, microlensing geometry, and stellar models to break otherwise limiting parameter degeneracies.</p>
+            <p class="result">Opens a route to metallicity measurements for distant M dwarfs.</p>
+            <div class="card-links"><a href="https://github.com/zhangjiyuan22/MetalLens">GitHub ↗</a><a href="https://arxiv.org/abs/2609.05265">arXiv ↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Background</p>
+          <h2>Research and engineering across scales</h2>
+          <p class="section-intro">Across my projects, I look for the structure that changes whether a problem is feasible: a computational bottleneck that can be reformulated, a numerical representation that can be reused, or complementary physical information that makes a latent parameter identifiable.</p>
+          <p class="section-intro">I am particularly interested in extending these capabilities to simulation, planning, and inference for intelligent physical systems.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>PhD Candidate · Astronomy</h3>
+            <p>Tsinghua University · 2022–2027 (expected)<br>Advisor: Prof. Shude Mao</p>
+          </div>
+          <div class="timeline-item">
+            <h3>B.Eng. · Electrical Engineering and Automation</h3>
+            <p>Tsinghua University · 2017–2022<br>GPA 3.69/4.00 · Rank 30/121</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Methods</h3>
+            <p>Python · C/C++ · Linux · Data structures · Adaptive grids · Numerical interpolation · HPC · Bayesian inference</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><p class="eyebrow">Find more</p><h2>Research links</h2></div>
+        </div>
+        <div class="link-list">
+          <a class="link-row" href="publications.html"><strong>Selected publications</strong><span>Six peer-reviewed and submitted works →</span></a>
+          <a class="link-row" href="https://ui.adsabs.harvard.edu/public-libraries/MH4K5mXeRz2JETnLL0yPbg"><strong>Full publication list</strong><span>NASA ADS ↗</span></a>
+          <a class="link-row" href="talks.html"><strong>Talks and seminars</strong><span>International conferences and invited seminars →</span></a>
+          <a class="link-row" href="https://github.com/zhangjiyuan22"><strong>Open-source code</strong><span>GitHub ↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Jiyuan Zhang · 张纪元</span>
+      <div class="footer-links"><a href="mailto:zhangjy22@mails.tsinghua.edu.cn">Email</a><a href="https://github.com/zhangjiyuan22">GitHub</a><a href="assets/Jiyuan_Zhang_CV.pdf">CV</a></div>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
