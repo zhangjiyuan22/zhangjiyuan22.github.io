@@ -173,7 +173,9 @@ h1 { margin: 0; font-size: clamp(2.8rem, 7vw, 5.6rem); letter-spacing: -0.055em;
   margin: 8px 0 86px;
 }
 
-.metrics-section { padding-top: 72px; }
+.metrics-section { padding: 72px 0; }
+.metrics-section .section-intro { max-width: 880px; margin-bottom: 30px; }
+.metrics-section .metric-grid { margin: 0; }
 
 .research-program-section {
   position: relative;
